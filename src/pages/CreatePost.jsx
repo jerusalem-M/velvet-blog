@@ -25,26 +25,29 @@ export default function CreatePost() {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white p-6 rounded shadow mt-10 text-nude">
-      <h2 className="text-2xl font-bold mb-4">Create Post</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md mt-12 text-darkbrown">
+      <h2 className="text-3xl font-bold mb-6 tracking-wide">Create Post</h2>
+      <form onSubmit={handleSubmit} className="space-y-6">
         <input
-          className="w-full mb-4 p-2 border border-nude rounded"
+          className="w-full p-3 border border-darkbrown rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-nude"
           type="text"
-          placeholder="Title"
+          placeholder="Post Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
         />
         <textarea
-          className="w-full mb-4 p-2 border border-nude rounded"
-          rows="5"
+          className="w-full p-3 border border-darkbrown rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-nude"
+          rows="6"
           placeholder="Your content..."
           value={content}
           onChange={(e) => setContent(e.target.value)}
           required
         />
-        <button className="bg-nude text-white py-2 px-4 rounded hover:opacity-80">
+        <button
+          type="submit"
+          className="bg-darkbrown text-#4b3329 py-2 px-6 rounded-lg hover:bg-[#4b3329] transition-all shadow-md"
+        >
           Publish
         </button>
       </form>
