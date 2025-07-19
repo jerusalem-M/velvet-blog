@@ -46,7 +46,7 @@ export default function CreatePost() {
         />
         <button
           type="submit"
-          className="bg-darkbrown text-#4b3329 py-2 px-6 rounded-lg"
+          className="bg-darkbrown text-#4b3329 py-2 px-6 rounded-lg transition-all shadow-sm"
         >
           Publish
         </button>
