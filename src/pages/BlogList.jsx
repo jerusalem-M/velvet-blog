@@ -36,7 +36,7 @@ export default function BlogList() {
               <p className="mb-4 break-words whitespace-pre-wrap">{post.content}</p>
               <button
                 onClick={() => handleDelete(post.id)}
-                className="bg-darkbrown text-#4b3329 py-2 px-5 rounded"
+                className="bg-darkbrown text-#4b3329 py-2 px-5 rounded transition-all shadow-sm"
               >
                 Delete
               </button>
